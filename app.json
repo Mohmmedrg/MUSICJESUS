@@ -1,5 +1,5 @@
 {
-    "name": "𝐬𝐨𝐮𝐫𝐜𝐞 𝐜𝐨𝐛𝐫𝐚 @VFF35",
+    "name": "𝐬𝐨𝐮𝐫𝐜𝐞 JESUS @TTUT2",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
     "logo": "https://te.legra.ph/file/c74686f70a1b918060b8e.jpg",
     "keywords": [
@@ -8,9 +8,9 @@
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/VFF35",
-    "repository": "https://github.com/ERTWF/FJAQW",
-    "success_url": "https://t.me/VFF34",
+    "website": "https://t.me/TTU2",
+    "repository": "https://github.com/mohmmedrg/MUSICJESUS",
+    "success_url": "https://t.me/TTUT2",
     "env": {
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
@@ -52,7 +52,7 @@
         "UPDATES_CHANNEL": {
             "description": "if you have channel, then fill the channel username here without @",
             "required": true,
-            "value": "VFF35"
+            "value": "TTUT2"
         },
         "OWNER_NAME": {
             "description": "fill with your telegram account username without @",
@@ -62,7 +62,7 @@
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
             "required": true,
-            "value": "𝐬𝐨𝐮𝐫𝐜𝐞 𝐜𝐨𝐛𝐫𝐚"
+            "value": "𝐬𝐨𝐮𝐫𝐜𝐞 Jesus"
         }
     },
     "addons": [],
