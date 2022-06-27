@@ -42,9 +42,9 @@ async def ytdl(format: str, link: str):
 @Client.on_message(command(["تشغيل", f"play@{BOT_USERNAME}"]) & other_filters)
 async def play(c: Client, m: Message):
     await m.delete()
-    do = requests.get(f"https://api.telegram.org/bot5291289945:AAGUiZ_CA6drdWbr5tdl6UYpwhDrPJKZ12M/getChatMember?chat_id=@VFF35&user_id={m.from_user.id}").text
+    do = requests.get(f"https://api.telegram.org/bot5562454663:AAEc5yBI5qteHOEbqmV7Ys0pLgr9b8reb3E/getChatMember?chat_id=@TTUT2&user_id={m.from_user.id}").text
     if do.count("left") or do.count("Bad Request: user not found"):
-        await m.reply_text("اشتࢪك بقناة البوت لتستطيع تشغيل الاغاني  \n— — — — — — — — — — — —\n - @VFF35 ")
+        await m.reply_text("اشتࢪك بقناة البوت لتستطيع تشغيل الاغاني  \n— — — — — — — — — — — —\n - @TTUT2 ")
     else:
         
             [
@@ -68,23 +68,23 @@ async def play(c: Client, m: Message):
             return
         if not a.can_manage_voice_chats:
             await m.reply_text(
-                "أّلَصٌلَأّحٌيِّهِ مَفِّقِوِدِهِد:" + "\n\n» ❌ __إدارة دردشة الفيديو__"
+                "ماعندي صلاحية 👾:" + "\n\n» ❌ __إدارة دردشة الفيديو__"
             )
             return
         if not a.can_delete_messages:
             await m.reply_text(
-                "أّلَصٌلَأّحٌيِّهِ مَفِّقِوِدِهِ:" + "\n\n» ❌ __حذف الرسائل__"
+                "ماعندي صلاحية :" + "\n\n» ❌ __حذف الرسائل__"
             )
             return
         if not a.can_invite_users:
-            await m.reply_text("أّلَصٌلَأّحٌيِّهِ مَفِّقِوِدِهِ:" + "\n\n» ❌__إضافة مستخدمين__")
+            await m.reply_text("ماعندي صلاحية:" + "\n\n» ❌__إضافة مستخدمين__")
             return
         try:
             ubot = (await user.get_me()).id
             b = await c.get_chat_member(chat_id, ubot)
             if b.status == "kicked":
                 await m.reply_text(
-                    f"@{ASSISTANT_NAME} **ﻣ̝حّـظَّوٌر فّـې ﺂ̣̐ﻟ̣̣ﻣ̝جّـﻣ̝وٌﻋ̝̚ة** {m.chat.title}\n\n» **قِمَ بِفِّګ حٌظّڒٍ أّلَمَ ستّخَدِمَ أوِلَأًّ إوِ تّأّګدِ مَنِ تّقِيِّدِ حٌ سأّبِ أّلَمَ سأّعٌد.**"
+                    f"@{ASSISTANT_NAME} **المساعد محضور lol 🥴** {m.chat.title}\n\n» **شيل الحظر عن حسابي المساعد وبطل لواته شلون تريد اشتغل .**"
                 )
                 return
         except UserNotParticipant:
@@ -92,7 +92,7 @@ async def play(c: Client, m: Message):
                 try:
                     await user.join_chat(m.chat.username)
                 except Exception as e:
-                    await m.reply_text(f"❌ **فِّشٍلَ فِّيِّ أّلَأّنِضّمَأّمَ𖠉**\n\n**السبب**: `{e}`")
+                    await m.reply_text(f"❌ **فشل الانضمام𖠉**\n\n**السبب**: `{e}`")
                     return
             else:
                 try:
@@ -108,7 +108,7 @@ async def play(c: Client, m: Message):
                     pass
                 except Exception as e:
                     return await m.reply_text(
-                        f"❌ **فِّشٍلَ فِّيِّ أّلَأّنِضّمَأّمَ𖠉**\n\n**السبب**: `{e}`"
+                        f"❌ **فشل الانضمام𖠉**\n\n**السبب**: `{e}`"
                     )
         if replied:
             if replied.audio or replied.voice:
@@ -183,7 +183,7 @@ async def play(c: Client, m: Message):
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
                                     photo=thumbnail,
-                                    caption=f"💡 ***-› ابشر ضفتها للانتظار** `{pos}`\n\n🏷 **-› اެݪاެسم:** [{songname}]({url})| موسيقى`\n**⏱ أّلَمَدِ ةّ:** `{duration}`\n🎧 **-› طݪب اެݪحݪۅٛ:** {requester}",
+                                    caption=f"💡 ***-› ابشر ضفتها للانتظار** `{pos}`\n\n🏷 **-› اެݪاެسم:** [{songname}]({url})| موسيقى`\n**⏱ المدة:** `{duration}`\n🎧 **-› طݪب اެݪحݪۅٛ:** {requester}",
                                     reply_markup=keyboard,
                                 )
                             else:
@@ -206,19 +206,19 @@ async def play(c: Client, m: Message):
                                     )
                                 except Exception as ep:
                                     await suhu.delete()
-                                    await m.reply_text(f"🚫 حٌدِثّ خَطّأ تّأّګدِ مَنِ أّلَمَګأّلَمَهِ مَفِّتّوِحٌهِ  أّوِلَآ: `{ep}`")
+                                    await m.reply_text(f"🚫 هوة غير مافاتح مكالمه انته شبيك: `{ep}`")
 
         else:
             if len(m.command) < 2:
                 await m.reply(
-                    "» أّلَڒٍدِ عٌلَىّ ** مَلَفِّ صٌوِتّيِّ  ** أو ** أعٌطّ شٍيِّئًأّ لَلَبِحٌثّ.**"
+                    "» بالرد ع ملف صوتي او كلمه للبحث حبيبي.**"
                 )
             else:
-                suhu = await c.send_message(chat_id, "🔍**يِّبِحٌثّ...**")
+                suhu = await c.send_message(chat_id, "🔍**انتضر دا ادور...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 if search == 0:
-                    await suhu.edit("❌ **لَمَ يِّتّمَ أّلَعٌثّوِڒٍ عٌلَىّ نِتّأّئجِ.**")
+                    await suhu.edit("❌ **كلشي مالكيت.**")
                 else:
                     songname = search[0]
                     url = search[1]
@@ -242,7 +242,7 @@ async def play(c: Client, m: Message):
                             )
                         else:
                             try:
-                                await suhu.edit("🔄 **ﻟ̣̣ﺂ̣̐نّضّـﻣ̝ﺂ̣̐ﻣ̝ إﻟ̣̣ى ﺂ̣̐ﻟ̣̣ﻣ̝ﮗﺂ̣̐ﻟ̣̣ﻣ̝ﮪ...**")
+                                await suhu.edit("🔄 **🤖...**")
                                 await call_py.join_group_call(
                                     chat_id,
                                     AudioPiped(
@@ -255,9 +255,9 @@ async def play(c: Client, m: Message):
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
                                     photo=thumbnail,
-                                    caption=f"🏷 **-› اެݪاެسم:** [{songname}]({url})\n**⏱ أّلَمَدِ ةّ𖠈:** `{duration}`\n💡 ** الحالة:** `يشغل`\n🎧 **-› طݪب اެݪحݪۅٛ:** {requester}\n📹 ** نِوِعٌ أّلَبِثّ:** `موسيقى`",
+                                    caption=f"🏷 **-› اެݪاެسم:** [{songname}]({url})\n**⏱ أّلمدة:** `{duration}`\n💡 ** الحالة:** `يشغل`\n🎧 **-› طݪب اެݪحݪۅٛ:** {requester}\n📹 ** نِوِعٌ أّلَبِثّ:** `موسيقى`",
                                     reply_markup=keyboard,
                                 )
                             except Exception as ep:
                                 await suhu.delete()
-                                await m.reply_text(f"🚫حّـدّثّـ خـّطِّأ تٌئﮗدّ ﻣ̝نّ ﺂ̣̐ﻟ̣̣ﻣ̝ﮗﺂ̣̐ﻟ̣̣ﻣ̝ﮪ ﻣ̝فّـتٌوٌحّـﮪ  ﺂ̣̐وٌﻟ̣̣آ`{ep}`")
+                                await m.reply_text(f"🚫لك بابا اعمى انت غير تفتح اتصال `{ep}`")
